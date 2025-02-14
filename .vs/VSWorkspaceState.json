@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\config",
-    "\\config\\packages",
-    "\\config\\routes",
-    "\\migrations",
+    "\\gitblog",
     "\\src",
-    "\\src\\Controller",
-    "\\src\\Repository",
+    "\\src\\Entity",
+    "\\src\\Form",
     "\\templates",
-    "\\templates\\blog"
+    "\\templates\\login",
+    "\\tests",
+    "\\var",
+    "\\var\\cache"
   ],
-  "SelectedNode": "\\migrations",
+  "SelectedNode": "\\src\\Controller\\BlogController.php",
   "PreviewInSolutionExplorer": false
 }

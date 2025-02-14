@@ -18,7 +18,7 @@ class BlogPost
     #[ORM\Column(length: 100)]
     private ?string $title = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(type: "text")]
     private ?string $description = null;
 
     #[ORM\Column]
@@ -32,6 +32,7 @@ class BlogPost
 
     public function __construct()
     {
+         $this->createdAt = new \DateTimeImmutable(); 
         $this->comments = new ArrayCollection();
     }
 
@@ -69,13 +70,13 @@ class BlogPost
         return $this->createdAt;
     }
 
-    public function setCreatedAt(\DateTimeImmutable $createdAt): static
+     #[ORM\PrePersist] // Auto-set before inserting into DB
+    public function setCreatedAtValue(): void
     {
-        $this->createdAt = $createdAt;
-
-        return $this;
+        if ($this->createdAt === null) {
+            $this->createdAt = new \DateTime();
+        }
     }
-
     /**
      * @return Collection<int, Comment>
      */

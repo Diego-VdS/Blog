@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Blog Post{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <div class="card shadow-lg p-4">
+            <h1 class="text-center text-primary mb-4">Edit Blog Post</h1>
+
+            {{ form_start(form, {'attr': {'class': 'needs-validation'}}) }}
+                <div class="mb-3">
+                    <label for="{{ form.title.vars.id }}" class="form-label">Title</label>
+                    {{ form_widget(form.title, {'attr': {'class': 'form-control'}}) }}
+                </div>
+
+                <div class="mb-3">
+                    <label for="{{ form.description.vars.id }}" class="form-label">Description</label>
+                    {{ form_widget(form.description, {'attr': {'class': 'form-control', 'rows': 5}}) }}
+                </div>
+
+                {# Automatically set createdAt and hide it #}
+                {{ form_widget(form.createdAt, {'attr': {'type': 'hidden'}}) }}
+
+                <div class="d-flex justify-content-between">
+                    <a href="{{ path('blog_mainpage') }}" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Back to List
+                    </a>
+                    <button type="submit" class="btn btn-success">
+                        <i class="bi bi-save"></i> Update Post
+                    </button>
+                </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
+{% endblock %}
