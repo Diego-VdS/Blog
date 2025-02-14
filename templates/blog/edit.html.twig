@@ -3,30 +3,48 @@
 {% block title %}Edit Blog Post{% endblock %}
 
 {% block body %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+<a class="custom-nav" href="{{ path('blog_mainpage') }}">Mijn Blog</a>
+        <div class="navbar-collapse" id="navbarNav">
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                {% if app.user %}
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('blog_add') }}">Toevoegen</a>
+                        </li>
+                    {% endif %}
+                    <a class="nav-link" href="{{ path('app_logout') }}">Uitloggen</a>
+                {% else %}
+                    <a class="nav-link" href="{{ path('app_login') }}">Inloggen</a>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
     <div class="container mt-5">
         <div class="card shadow-lg p-4">
-            <h1 class="text-center text-primary mb-4">Edit Blog Post</h1>
+            <h1 class="text-center text-primary mb-4">Bewerk Blog</h1>
 
             {{ form_start(form, {'attr': {'class': 'needs-validation'}}) }}
                 <div class="mb-3">
-                    <label for="{{ form.title.vars.id }}" class="form-label">Title</label>
+                    <label for="{{ form.title.vars.id }}" class="form-label">Titel</label>
                     {{ form_widget(form.title, {'attr': {'class': 'form-control'}}) }}
                 </div>
 
                 <div class="mb-3">
-                    <label for="{{ form.description.vars.id }}" class="form-label">Description</label>
+                    <label for="{{ form.description.vars.id }}" class="form-label">Inhoud</label>
                     {{ form_widget(form.description, {'attr': {'class': 'form-control', 'rows': 5}}) }}
                 </div>
-
-                {# Automatically set createdAt and hide it #}
-                {{ form_widget(form.createdAt, {'attr': {'type': 'hidden'}}) }}
-
                 <div class="d-flex justify-content-between">
                     <a href="{{ path('blog_mainpage') }}" class="btn btn-secondary">
-                        <i class="bi bi-arrow-left"></i> Back to List
+                        <i class="bi bi-arrow-left"></i> Alle Posts
                     </a>
                     <button type="submit" class="btn btn-success">
-                        <i class="bi bi-save"></i> Update Post
+                        <i class="bi bi-save"></i> Bewerking Opslaan
                     </button>
                 </div>
             {{ form_end(form) }}

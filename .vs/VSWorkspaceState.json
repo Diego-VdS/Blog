@@ -1,13 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\gitblog",
+    "\\assets",
+    "\\assets\\styles",
+    "\\migrations",
+    "\\public",
     "\\src",
-    "\\src\\Entity",
-    "\\src\\Form",
+    "\\src\\Controller",
     "\\templates",
-    "\\templates\\login",
-    "\\tests",
+    "\\templates\\blog",
     "\\var",
     "\\var\\cache"
   ],

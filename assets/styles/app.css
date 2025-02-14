@@ -1,3 +1,40 @@
 body {
-    background-color: skyblue;
+    background-color: #cce8ee;
+}
+.comment-container {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    /* Trash can top-right corner */
+    .comment-container form {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+.fas.fa-trash-alt {
+    font-size: 15px;
+}
+
+    .fas.fa-trash-alt:hover {
+        color: darkred;
+        cursor: pointer;
+    }
+.custom-nav {
+    color: #0080ff !important;
+    text-decoration: none; 
+}
+
+    .custom-nav:hover {
+        color: #006bb3;
+    }
+.nav-link {
+    color: #0080ff !important;
 }

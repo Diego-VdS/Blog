@@ -3,37 +3,33 @@
 {% block title %}Blog Overview{% endblock %}
 
 {% block body %}
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="{{ path('blog_mainpage') }}">My Blog</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+<a class="custom-nav" href="{{ path('blog_mainpage') }}">Mijn Blog</a>
+        <div class="navbar-collapse" id="navbarNav">
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-               
-    {% if app.user %}
-        {% if is_granted('ROLE_ADMIN') %}
-        <li class="nav-item">
-            <a class="nav-link" href="{{ path('blog_add') }}">Add</a>
-        </li>
-            {% endif %}
-        <a class="nav-link" href="{{ path('app_logout') }}">Logout</a>
-    {% else %}
-        <a class="nav-link" href="{{ path('app_login') }}">Login</a>
-
-    {% endif %}
-</li>
-
+                {% if app.user %}
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('blog_add') }}">Toevoegen</a>
+                        </li>
+                    {% endif %}
+                    <a class="nav-link" href="{{ path('app_logout') }}">Uitloggen</a>
+                {% else %}
+                    <a class="nav-link" href="{{ path('app_login') }}">Inloggen</a>
+                {% endif %}
             </ul>
         </div>
     </div>
 </nav>
 
 <div class="container my-4">
-    <h1 class="text-center mb-4">Blog Posts</h1>
-
+    <h1 class="text-center mb-4">Blogberichten</h1>
     {% if posts is empty %}
         <div class="alert alert-info" role="alert">
             Geen berichten beschikbaar.
@@ -42,11 +38,27 @@
         <div class="row">
             {% for post in posts %}
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card position-relative">
                         <div class="card-body">
+                            <p class="text-muted text-center">
+                                Gepubliceerd op {{ post.createdAt|date('F j, Y') }} 
+                            </p>
                             <h5 class="card-title">{{ post.title|upper|trim }}</h5>
-                            <p class="card-text">{{ post.content|slice(0, 200) }}...</p>
+                            <p class="card-text">{{ post.description|slice(0, 200) }}...</p>
                             <a href="{{ path('blog_show', {id: post.id}) }}" class="btn btn-primary">Lees verder</a>
+
+                            {% if is_granted('ROLE_ADMIN') %}
+                                <div class="position-absolute top-0 end-0 p-2">
+                                    <a href="{{ path('blog_edit', {id: post.id}) }}" class="btn btn-warning btn-sm" title="Edit">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    <form action="{{ path('blog_delete', {id: post.id}) }}" method="POST" class="d-inline-block" onsubmit="return confirm('Bent u zeker dat u deze Post wilt verwijderen?')">
+                                        <button type="submit" class="btn btn-danger btn-sm" title="Delete">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
