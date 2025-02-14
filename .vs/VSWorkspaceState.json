@@ -1,11 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\config",
+    "\\config\\packages",
+    "\\config\\routes",
+    "\\migrations",
     "\\src",
     "\\src\\Controller",
-    "\\src\\Entity",
-    "\\src\\Form"
+    "\\src\\Repository",
+    "\\templates",
+    "\\templates\\blog"
   ],
-  "SelectedNode": "\\src\\Form\\AnonymousCommentType.php",
+  "SelectedNode": "\\migrations",
   "PreviewInSolutionExplorer": false
 }

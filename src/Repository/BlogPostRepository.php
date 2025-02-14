@@ -16,6 +16,19 @@ class BlogPostRepository extends ServiceEntityRepository
         parent::__construct($registry, BlogPost::class);
     }
 
+    /**
+ * @return BlogPost[] Returns an array of BlogPost objects
+ */
+public function findByValue($value, $sortOrder = 'DESC'): array
+{
+    return $this->createQueryBuilder('b')
+        ->andWhere('b.createdAt = :val')
+        ->setParameter('val', $value) 
+        ->orderBy('b.createdAt', $sortOrder)
+        ->getQuery()
+        ->getResult();
+}
+
     //    /**
     //     * @return BlogPost[] Returns an array of BlogPost objects
     //     */
