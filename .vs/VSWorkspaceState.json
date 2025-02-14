@@ -9,9 +9,9 @@
     "\\src\\Controller",
     "\\templates",
     "\\templates\\blog",
-    "\\var",
-    "\\var\\cache"
+    "\\templates\\login",
+    "\\var"
   ],
-  "SelectedNode": "\\src\\Controller\\BlogController.php",
+  "SelectedNode": "\\templates\\login\\login.html.twig",
   "PreviewInSolutionExplorer": false
 }

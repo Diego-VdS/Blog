@@ -3,6 +3,29 @@
 {% block title %}Log in{% endblock %}
 
 {% block body %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+<a class="custom-nav" href="{{ path('blog_mainpage') }}">Mijn Blog</a>
+        <div class="navbar-collapse" id="navbarNav">
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                {% if app.user %}
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('blog_add') }}">Toevoegen</a>
+                        </li>
+                    {% endif %}
+                    <a class="nav-link" href="{{ path('app_logout') }}">Uitloggen</a>
+                {% else %}
+                    <a class="nav-link" href="{{ path('app_login') }}">Inloggen</a>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
 <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
         <div class="card-body">

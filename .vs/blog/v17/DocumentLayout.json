@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\login\\login.html.twig||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\login\\login.html.twig||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\blog\\add.html.twig||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\blog\\add.html.twig||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Controller\\BlogController.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Controller\\BlogController.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\blog\\index.html.twig||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\blog\\index.html.twig||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\blog\\add.html.twig||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\blog\\add.html.twig||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Controller\\PostController.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -55,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Entity\\Comment.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\login\\login.html.twig||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\login\\login.html.twig||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\public\\index.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\index.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
@@ -74,20 +74,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginController.php",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Controller\\LoginController.php",
-              "RelativeDocumentMoniker": "src\\Controller\\LoginController.php",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Controller\\LoginController.php",
-              "RelativeToolTip": "src\\Controller\\LoginController.php",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T13:11:36.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\assets\\styles\\app.css",
               "RelativeDocumentMoniker": "assets\\styles\\app.css",
@@ -95,12 +82,11 @@
               "RelativeToolTip": "assets\\styles\\app.css",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-14T13:06:40.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T13:06:40.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "PostType.php",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Form\\PostType.php",
               "RelativeDocumentMoniker": "src\\Form\\PostType.php",
@@ -108,12 +94,11 @@
               "RelativeToolTip": "src\\Form\\PostType.php",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T13:03:02.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T13:03:02.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PostController.php",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Controller\\PostController.php",
               "RelativeDocumentMoniker": "src\\Controller\\PostController.php",
@@ -121,12 +106,11 @@
               "RelativeToolTip": "src\\Controller\\PostController.php",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T13:00:31.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T13:00:31.123Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "edit.html.twig",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\blog\\edit.html.twig",
               "RelativeDocumentMoniker": "templates\\blog\\edit.html.twig",
@@ -134,12 +118,11 @@
               "RelativeToolTip": "templates\\blog\\edit.html.twig",
               "ViewState": "AgIAABgAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T12:35:23.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T12:35:23.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "show.html.twig",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\blog\\show.html.twig",
               "RelativeDocumentMoniker": "templates\\blog\\show.html.twig",
@@ -147,12 +130,11 @@
               "RelativeToolTip": "templates\\blog\\show.html.twig",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T12:30:18.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T12:30:18.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "index.html.twig",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\blog\\index.html.twig",
               "RelativeDocumentMoniker": "templates\\blog\\index.html.twig",
@@ -160,25 +142,24 @@
               "RelativeToolTip": "templates\\blog\\index.html.twig",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T12:24:22.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T12:24:22.782Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "add.html.twig",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\blog\\add.html.twig",
               "RelativeDocumentMoniker": "templates\\blog\\add.html.twig",
               "ToolTip": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\blog\\add.html.twig",
               "RelativeToolTip": "templates\\blog\\add.html.twig",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-02-14T12:35:01.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "BlogPost.php",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Entity\\BlogPost.php",
               "RelativeDocumentMoniker": "src\\Entity\\BlogPost.php",
@@ -186,12 +167,11 @@
               "RelativeToolTip": "src\\Entity\\BlogPost.php",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T12:24:14.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T12:24:14.101Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AnonymousCommentType.php",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Form\\AnonymousCommentType.php",
               "RelativeDocumentMoniker": "src\\Form\\AnonymousCommentType.php",
@@ -199,25 +179,49 @@
               "RelativeToolTip": "src\\Form\\AnonymousCommentType.php",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T12:45:56.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T12:45:56.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "BlogController.php",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Controller\\BlogController.php",
               "RelativeDocumentMoniker": "src\\Controller\\BlogController.php",
               "ToolTip": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Controller\\BlogController.php",
               "RelativeToolTip": "src\\Controller\\BlogController.php",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGEAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-02-14T12:25:07.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
+              "Title": "login.html.twig",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\login\\login.html.twig",
+              "RelativeDocumentMoniker": "templates\\login\\login.html.twig",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\login\\login.html.twig",
+              "RelativeToolTip": "templates\\login\\login.html.twig",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-14T12:33:29.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginController.php",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Controller\\LoginController.php",
+              "RelativeDocumentMoniker": "src\\Controller\\LoginController.php",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Controller\\LoginController.php",
+              "RelativeToolTip": "src\\Controller\\LoginController.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-14T13:11:36.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "base.html.twig",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\base.html.twig",
               "RelativeDocumentMoniker": "templates\\base.html.twig",
@@ -225,12 +229,11 @@
               "RelativeToolTip": "templates\\base.html.twig",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T13:03:12.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T13:03:12.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Comment.php",
               "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\src\\Entity\\Comment.php",
               "RelativeDocumentMoniker": "src\\Entity\\Comment.php",
@@ -238,21 +241,7 @@
               "RelativeToolTip": "src\\Entity\\Comment.php",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T12:32:13.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "login.html.twig",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\login\\login.html.twig",
-              "RelativeDocumentMoniker": "templates\\login\\login.html.twig",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Bureaublad\\blog\\templates\\login\\login.html.twig",
-              "RelativeToolTip": "templates\\login\\login.html.twig",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T12:33:29.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T12:32:13.687Z"
             },
             {
               "$type": "Document",
@@ -264,8 +253,7 @@
               "RelativeToolTip": "public\\index.php",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T12:27:13.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T12:27:13.014Z"
             }
           ]
         }
