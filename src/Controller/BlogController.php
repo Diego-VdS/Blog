@@ -96,15 +96,9 @@ final class BlogController extends AbstractController
         ]);
     }
     #[Route('/blog/{id}/delete', name: 'blog_delete', methods: ['POST'])]
-    public function delete(int $id, BlogPostRepository $blogPostRepository, EntityManagerInterface $entityManager): Response
+    public function delete(BlogPost $post, EntityManagerInterface $entityManager): Response
     {
-                 $this->denyAccessUnlessGranted('ROLE_ADMIN');
-
-        $post = $blogPostRepository->find($id);
-        
-        if (!$post) {
-            throw $this->createNotFoundException('De post die u probeert te verwijderen bestaat niet of is al verwijderd.');
-        }
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');    
         foreach ($post->getComments() as $comment) {
         $entityManager->remove($comment);
     }

@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\assets\\styles",
     "\\migrations",
     "\\public",
     "\\src",
     "\\src\\Controller",
+    "\\src\\Form",
     "\\templates",
     "\\templates\\blog",
     "\\templates\\login",
     "\\var"
   ],
-  "SelectedNode": "\\templates\\login\\login.html.twig",
+  "SelectedNode": "\\templates\\blog\\edit.html.twig",
   "PreviewInSolutionExplorer": false
 }
